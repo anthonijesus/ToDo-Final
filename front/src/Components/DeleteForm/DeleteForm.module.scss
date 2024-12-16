@@ -1,0 +1,39 @@
+.deleteTask {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+
+    h4 {
+      font-size: 18px;
+      margin: 5px;
+    }
+    h5 {
+      font-size: 16px;
+      margin: 5px;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #f3ecec;
+    }
+    .confirm{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;  
+    }
+    button {
+      margin: 5px;
+      gap: 10px;
+      width: 50px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover{
+      background-color: #4b864e;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+  }

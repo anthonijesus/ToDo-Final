@@ -1,0 +1,65 @@
+section {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  height: 80vh;
+
+  h2 {
+    font-size: 32px;
+  }
+}
+
+.todoList {
+  border-radius: 5px;
+  padding: 15px;
+  //width: 65%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  overflow: auto;
+}
+
+.listado {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+
+  h2 {
+    font-size: 32px;
+  }
+
+  table {
+    width: 100%;
+    margin: 10px;
+    table-layout: fixed;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-size: 0.9rem;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th {
+    background-color: #f3ecec;
+    text-align: center;
+    border: solid 1px #cccc;
+    font-size: 18px;
+  }
+
+  tr {
+    padding: 10px;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  
+  tr:hover {
+      background-color: #ebe5e5;
+  }
+  td {
+    text-align: center;
+    padding: 5px;
+    border: solid 1px #cccc;
+  }
+}

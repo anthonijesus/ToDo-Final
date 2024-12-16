@@ -1,0 +1,31 @@
+/* Modal.css */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.705);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modalContent {
+    background: white;
+    width: 45%;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+  }
+  
+  .modaClose {
+    margin-left: 90%;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
