@@ -36,7 +36,6 @@ export const getTasksController = async (req, res) => {
     try {
         const { creator, isCompleted } = req.query;
         
-        
         if(!creator){
             return res.status(400).json({ error: 'Debe especificar el id del usuario' });
         }
@@ -68,6 +67,7 @@ export const getTasksController = async (req, res) => {
 export const getTasksByIdController = async (req, res) => {
     try {
         const { id } = req.params;
+        
         const result = await getTaskSingle(id);
 
         // Si la tarea no existe en la BD, devuelve error

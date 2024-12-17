@@ -1,10 +1,8 @@
 import React from "react";
 import Fecha from "../Fecha/Fecha.jsx";
 import styles from "./Header.module.scss";
-import { useTask } from "../../Context/TaskContext.jsx";
 
 const Header = ({ param }) => {
-  const { user } = useTask();
   return (
     <header className={styles.header}>
       <div
@@ -18,7 +16,6 @@ const Header = ({ param }) => {
         }}
       >
         <Fecha />
-        <p>Bienvenido {user?.name}</p>
       </div>
       <div></div>
       <div

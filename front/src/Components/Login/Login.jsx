@@ -30,7 +30,7 @@ const Login = ({ onLogin }) => {
 
       navigate("/welcome");
     } catch (err) {
-      setError("Usuario o contraseña inválidos");
+      setError(`${err.response.data.message} - Intente nuevamente.`);
       setUsername("");
       setPassword("");
     }

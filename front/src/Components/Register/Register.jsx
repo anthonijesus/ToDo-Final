@@ -30,8 +30,8 @@ const Register = () => {
       alert("Registro exitoso. Inicia sesión para continuar.");
 
       navigate("/login");
-    } catch (err) {
-      setError("Usuario o contraseña inválidos");
+    } catch (error) {
+      setError(`${error.response.data.error}`);
       setUsername("");
       setName("");
       setEmail("");

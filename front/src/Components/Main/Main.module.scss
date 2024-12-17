@@ -41,9 +41,19 @@ main {
     align-items: center;
     width: 90%;
 
-    h3 {
-      font-size: 24px;
-      font-weight: 900 !important;
-    }
+    
   }
+  h3 {
+    font-size: 24px;
+    font-weight: 900 !important;
+  }
+}
+
+.container{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
